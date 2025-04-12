@@ -1,5 +1,7 @@
 
 import './App.css'
+import DaisyNav from './components/DaisyNav/DaisyNav'
+import Navbar from './components/Navbar/Navbar'
 
 function App() {
   
@@ -7,8 +9,17 @@ function App() {
     <>
     {/* ctrl + space for tailwind suggestion  */}
      
-      <h1 className='text-3xl'>Vite + React</h1>
-      <h1>hello</h1>
+      <header>
+      <Navbar></Navbar>
+      <DaisyNav></DaisyNav>
+      
+      </header>
+      <main>
+
+      </main>
+      <footer>
+
+      </footer>
     </>
   )
 }
