@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Membership",
+    "price": 20.00,
+    "description": "Access to gym facilities during off-peak hours.",
+    "features": [
+      "Off-peak access",
+      "Access to cardio and weight equipment",
+      "Locker rooms included",
+      "No long-term commitment"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Membership",
+    "price": 40.00,
+    "description": "Full access to gym facilities and group classes.",
+    "features": [
+      "Unlimited access during opening hours",
+      "Free group fitness classes (e.g., yoga, Zumba)",
+      "Locker and shower facilities",
+      "Discounts on personal training"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Membership",
+    "price": 70.00,
+    "description": "All-inclusive membership with exclusive perks.",
+    "features": [
+      "Unlimited gym access",
+      "Access to VIP lounge",
+      "Free personal training sessions (monthly)",
+      "Complimentary refreshments"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Family Membership",
+    "price": 100.00,
+    "description": "Special pricing for families of up to 4 members.",
+    "features": [
+      "Access for up to 4 family members",
+      "Group family fitness classes",
+      "Childcare services",
+      "Discounts on additional memberships"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Elite Membership",
+    "price": 120.00,
+    "description": "Tailored for fitness enthusiasts seeking premium services.",
+    "features": [
+      "24/7 access to gym facilities",
+      "Private fitness consultations",
+      "Access to exclusive workshops and events",
+      "High-end amenities (e.g., sauna, steam rooms)"
+    ]
+  }
+]
