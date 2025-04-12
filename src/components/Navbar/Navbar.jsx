@@ -41,14 +41,15 @@ const Navbar = () => {
       {open ?
      <X className='md:hidden'></X>
        : <Menu className='md:hidden'></Menu>}
-      <ul className='md:hidden'>
+      <ul className={`md:hidden absolute duration-1000 ${open ? "top-8" : '-top-70'}  bg-amber-300`}>
         {
           links
         }
       </ul>
      <h3 className='ml-4'>My Navbar</h3>
      </span>
-
+      
+        {/* navbar main  */}
 
       <ul className=' hidden md:flex'>
         {
