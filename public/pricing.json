@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Basic Membership",
     "price": 20.00,
+    "popular":true,
     "description": "Access to gym facilities during off-peak hours.",
     "features": [
       "Off-peak access",

@@ -2,7 +2,7 @@ import React from 'react';
 import PricingFeature from '../PricingOptions/PricingFeature';
 
 const PricingCard = ({pricing}) => {
-  console.log(pricing)
+  // console.log(pricing)
   const {name,price,description,features}=pricing;
   return (
     <div className='flex flex-col  border bg-amber-700 p-6 rounded-4xl shadow-amber-300 '>
