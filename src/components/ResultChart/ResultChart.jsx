@@ -1,5 +1,5 @@
 import React from 'react';
-import { Line, LineChart } from 'recharts';
+import { Line, LineChart, XAxis, YAxis } from 'recharts';
 
 const resultData  =[
   {
@@ -78,6 +78,8 @@ const ResultChart = () => {
   return (
     <div>
       <LineChart width={500} height={500} data={resultData}>
+        <XAxis dataKey="Name"></XAxis>
+        <YAxis ></YAxis>
         <Line dataKey="Math Marks"></Line>
         <Line dataKey="Chemistry Marks" stroke='pink'></Line>
 
