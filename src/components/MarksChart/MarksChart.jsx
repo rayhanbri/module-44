@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import { Bar, BarChart, XAxis, YAxis } from 'recharts';
 
 const MarksChart = ({markPormise}) => {
   const marksDataRes = use(markPormise);
@@ -9,7 +10,7 @@ const MarksChart = ({markPormise}) => {
   const marksChartData = marksData.map(studentData =>{
     const student = {
       id:studentData.ID,
-      name:studentData.Name,
+      Name:studentData.Name,
       Physics:studentData.Marks.Physics,
       Chemistry:studentData.Marks.Chemistry,
       Math:studentData.Marks.Math,
@@ -22,7 +23,12 @@ const MarksChart = ({markPormise}) => {
   console.log(marksChartData)
   return (
     <div>
-      
+      <BarChart width={500} height={300} data={marksChartData}>
+        <XAxis dataKey="Name"></XAxis>
+        <YAxis></YAxis>
+        <Bar dataKey="avg" fill='yellow'></Bar>
+        <Bar dataKey="Chemistry" fill='blue'></Bar>
+      </BarChart>
     </div>
   );
 };
