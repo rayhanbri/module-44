@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import Link from './link';
 import { Menu, X } from 'lucide-react';
+// 1.how we can toggle with state 
+//2.How to use conditonal class
+//3.what is absolute position
 
-const NavigationData  = [
+const NavigationData = [
   {
     "id": 1,
     "name": "Google",
@@ -33,30 +36,33 @@ const NavigationData  = [
 
 
 const Navbar = () => {
-  const [open,setOpen] = useState(false)
-   const links = NavigationData.map(route =><Link key={route.id} route={route} ></Link>)
+  const [open, setOpen] = useState(false);
+  const links = NavigationData.map(route => <li key={route.id} className='mr-4'>
+    <a href={route.path}>{route.name}</a>
+  </li>)
+
   return (
     <nav className='flex  justify-between mx-15'>
-     <span className='flex' onClick={()=>setOpen(!open)}>
-      {open ?
-     <X className='md:hidden'></X>
-       : <Menu className='md:hidden'></Menu>}
-      <ul className={`md:hidden absolute duration-1000 ${open ? "top-8" : '-top-70'}  bg-amber-300`}>
+      <span className='flex' onClick={() => setOpen(!open)}>
+        {open ?
+          <X className='md:hidden'></X>
+          : <Menu className='md:hidden'></Menu>}
+        <ul className={`md:hidden absolute duration-1000 ${open ? "top-10 h-44" : '-top-70'}  bg-amber-300`}>
+          {
+            links
+          }
+        </ul>
+        <h3 className='ml-4'>My Navbar</h3>
+      </span>
+
+      {/* navbar main  */}
+
+      <ul className=' hidden md:flex'>
         {
           links
         }
       </ul>
-     <h3 className='ml-4'>My Navbar</h3>
-     </span>
-      
-        {/* navbar main  */}
 
-      <ul className=' hidden md:flex'>
-        {
-         links
-        }
-      </ul>
-     
 
 
       {/* <ul className='flex'>
@@ -67,14 +73,14 @@ const Navbar = () => {
         } */}
       {/* </ul> */}
       {/* <ul className='flex '> */}
-        {/* ctrl + alt + down arrow for multi cursor */}
-        {/* <li className='mr-4'><a href=''>Home</a></li>
+      {/* ctrl + alt + down arrow for multi cursor */}
+      {/* <li className='mr-4'><a href=''>Home</a></li>
         <li className='mr-4'><a href=''>About</a></li>
         <li className='mr-4'><a href=''>logIN </a></li>
       </ul> */}
       <button>sign in</button>
     </nav>
-    
+
   );
 };
 

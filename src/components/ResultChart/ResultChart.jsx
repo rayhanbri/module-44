@@ -1,6 +1,9 @@
 import React from 'react';
 import { Line, LineChart, XAxis, YAxis } from 'recharts';
 
+// what is rechart explore it more and more and practice through doucmentation
+//what is axois  wi
+
 const resultData  =[
   {
     "ID": 101,

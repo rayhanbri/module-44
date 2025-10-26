@@ -1,0 +1,13 @@
+what is plugin in tailwind css
+
+
+//Explore awsome ui component important
+
+
+module flow 
+1.how add font
+2.navbar.jsx
+3.pricing.option send data
+4.pricing card
+5.ResultChart
+6.marksChart

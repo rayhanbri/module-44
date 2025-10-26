@@ -20,7 +20,7 @@ const MarksChart = ({markPormise}) => {
     student.avg=avg
     return student
   })
-  console.log(marksChartData)
+  // console.log(marksChartData)
   return (
     <div>
       <BarChart width={500} height={300} data={marksChartData}>

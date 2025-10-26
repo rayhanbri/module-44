@@ -8,9 +8,12 @@ import ResultChart from './components/ResultChart/ResultChart'
 import axios from 'axios'
 import MarksChart from './components/MarksChart/MarksChart'
 
+// 1.How  make a fecth req then send it to another folder 
+//what is suspense 
 
-const pricingPromise = fetch('pricing.json')
-.then(res => res.json());
+
+const pricingPromise =fetch('pricing.json').then(res => res.json())
+
 
 const  markPormise = axios.get('marks.json');
 
